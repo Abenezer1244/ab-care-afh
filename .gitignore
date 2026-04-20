@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build tooling work-in-progress
+.cache/
+.vercel/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Claude tooling
+.claude/
+
+# Local dev artifacts (dev mockups and one-off Python helpers)
+dev/
+scripts/
+*.py

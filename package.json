@@ -1,0 +1,13 @@
+{
+  "name": "ab-care-afh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AB CARE AFH marketing site",
+  "scripts": {
+    "build:css": "tailwindcss -i src/tailwind.css -o tailwind.css --minify",
+    "watch:css": "tailwindcss -i src/tailwind.css -o tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
