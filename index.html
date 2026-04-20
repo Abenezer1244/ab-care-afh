@@ -87,24 +87,28 @@
 
 <!-- NAVBAR -->
 <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-stone-100">
- <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-5 flex items-center justify-between">
- <a href="/" class="flex items-center gap-2.5 serif text-xl tracking-tight leading-none">
+ <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-5 flex items-center">
+ <div class="flex-1 flex items-center">
+ <a href="/" class="flex items-center gap-4 serif text-xl tracking-tight leading-none">
  <img src="/images/logo.png" alt="" class="h-8 w-8" width="32" height="32">
  <span>AB CARE <span class="text-coral">AFH</span></span>
  </a>
+ </div>
  <div class="hidden md:flex items-center gap-8 text-sm font-medium">
  <a href="/" class="nav-link" data-active="true">Home</a>
  <a href="/about" class="nav-link">About</a>
  <a href="/services" class="nav-link">Services</a>
  <a href="/gallery" class="nav-link">Gallery</a>
  <a href="/contact" class="nav-link">Contact</a>
- <a href="/contact" class="btn-coral !py-2.5 !px-5 !text-xs">Schedule a Tour</a>
  </div>
+ <div class="flex-1 flex justify-end items-center gap-4">
+ <a href="/contact" class="btn-coral !py-2.5 !px-5 !text-xs hidden md:flex">Schedule a Tour</a>
  <button id="mm-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu" aria-controls="mm" aria-expanded="false">
  <span class="w-6 h-px bg-ink"></span>
  <span class="w-6 h-px bg-ink"></span>
  <span class="w-6 h-px bg-ink"></span>
  </button>
+ </div>
  </div>
  <!-- Mobile menu -->
  <div id="mm" class="md:hidden hidden border-t border-stone-100 bg-white">
@@ -393,7 +397,7 @@
  <div class="max-w-[1400px] mx-auto px-6 md:px-12">
  <div class="grid md:grid-cols-4 gap-12 pb-16 border-b border-white/10">
  <div>
- <div class="flex items-center gap-2.5 serif text-xl leading-none"><img src="/images/logo.png" alt="" class="h-9 w-9" style="filter:invert(1)" width="36" height="36">AB CARE <span class="text-coral">AFH</span></div>
+ <div class="flex items-center gap-4 serif text-xl leading-none"><img src="/images/logo.png" alt="" class="h-9 w-9" style="filter:invert(1)" width="36" height="36">AB CARE <span class="text-coral">AFH</span></div>
  <p class="text-white/60 text-sm mt-6 leading-relaxed max-w-xs font-light">
  An adult family home dedicated to respectful, personalized care in a warm residential setting in Everett, Washington.
  </p>
