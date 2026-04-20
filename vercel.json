@@ -1,11 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.abcareafhllc.com" }],
       "destination": "https://abcareafhllc.com/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/about-us",      "destination": "/about", "permanent": true },
+    { "source": "/about-us.html", "destination": "/about", "permanent": true }
   ]
 }
