@@ -6,10 +6,10 @@ Three things to turn on once the site is live. All require external accounts.
 
 Recommended: [Plausible](https://plausible.io) or [Fathom](https://usefathom.com). No cookie banner required (GDPR/PECR friendly).
 
-After creating an account for `abcare-afh.com`, paste the tag into every page before `</head>`. Example for Plausible:
+After creating an account for `abcareafhllc.com`, paste the tag into every page before `</head>`. Example for Plausible:
 
 ```html
-<script defer data-domain="abcare-afh.com" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="abcareafhllc.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 Run this Python one-liner to apply to all pages at once:
@@ -43,11 +43,11 @@ The honeypot (`_honey`) is already wired.
 ## 3. Uptime monitoring
 
 [UptimeRobot](https://uptimerobot.com) free tier pings the site every 5 minutes. Set up:
-- Monitor: `https://abcare-afh.com/` (HTTP keyword contains "AB CARE")
+- Monitor: `https://abcareafhllc.com/` (HTTP keyword contains "AB CARE")
 - Alert contact: your email + SMS
 - Keyword: "AB CARE" catches both 5xx errors AND accidental blank pages (common after a bad deploy)
 
-Optional second monitor on `https://abcare-afh.com/contact.html` to catch form page regressions specifically.
+Optional second monitor on `https://abcareafhllc.com/contact.html` to catch form page regressions specifically.
 
 ## When to care
 

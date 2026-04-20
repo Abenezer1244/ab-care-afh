@@ -3,4 +3,4 @@ Allow: /
 Disallow: /mockup-v3.html
 Disallow: /scripts/
 
-Sitemap: https://abcare-afh.com/sitemap.xml
+Sitemap: https://abcareafhllc.com/sitemap.xml
