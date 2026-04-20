@@ -104,59 +104,23 @@
  <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
 
  <div class="field sm:col-span-2">
- <label for="name">Full name</label>
+ <label for="name">Your name</label>
  <input type="text" id="name" name="name" required placeholder="Jane Smith">
  </div>
 
- <div class="field">
- <label for="email">Email</label>
- <input type="email" id="email" name="email" required placeholder="you@example.com">
- </div>
-
- <div class="field">
- <label for="phone">Phone</label>
- <input type="tel" id="phone" name="phone" placeholder="(206) 555-0100">
- </div>
-
- <div class="field">
- <label for="relationship">Asking on behalf of</label>
- <select id="relationship" name="relationship">
- <option value="">Select one…</option>
- <option value="parent">My parent</option>
- <option value="spouse">My spouse</option>
- <option value="sibling">A sibling</option>
- <option value="other-family">Another family member</option>
- <option value="self">Myself</option>
- <option value="professional">A patient / client (professional)</option>
- </select>
- </div>
-
- <div class="field">
- <label for="care_level">Level of care needed</label>
- <select id="care_level" name="care_level">
- <option value="">Select one…</option>
- <option value="exploring">Just exploring, not urgent</option>
- <option value="light">Light assistance (meals, medication)</option>
- <option value="moderate">Moderate (mobility, bathing, daily help)</option>
- <option value="memory-care">Memory care / dementia support</option>
- <option value="end-of-life">End-of-life / hospice support</option>
- <option value="unsure">Not sure yet</option>
- </select>
+ <div class="field sm:col-span-2">
+ <label for="contact">Phone or email</label>
+ <input type="text" id="contact" name="contact" required placeholder="(206) 555-0100 or you@example.com">
  </div>
 
  <div class="field sm:col-span-2">
- <label for="tour_date">Preferred tour date (optional)</label>
- <input type="date" id="tour_date" name="tour_date">
- </div>
-
- <div class="field sm:col-span-2">
- <label for="message">Anything we should know?</label>
- <textarea id="message" name="message" rows="5" required placeholder="Tell us about your family member, their current situation, or any questions you have."></textarea>
+ <label for="message">What should we know?</label>
+ <textarea id="message" name="message" rows="4" required placeholder="A few words about your loved one or what you're looking for."></textarea>
  </div>
 
  <div class="sm:col-span-2 flex flex-wrap items-center gap-4 mt-2">
- <button type="submit" class="btn-coral">Submit Inquiry →</button>
- <p class="text-xs text-stone-500">We respect your privacy. Personal response within 24 hours.</p>
+ <button type="submit" class="btn-coral">Send Inquiry →</button>
+ <p class="text-xs text-stone-500">Or call/text <a href="tel:+12068345724" class="underline">(206) 834-5724</a>. Personal reply within 24 hours.</p>
  </div>
  </form>
  </div>
@@ -253,7 +217,7 @@
  </div>
  </div>
  <div class="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between text-xs text-white/40 gap-3">
- <div>© 2026 AB CARE AFH · Licensed Adult Family Home · Everett, WA</div>
+ <div>© 2026 AB CARE AFH · Licensed Adult Family Home · Everett, WA · WA DSHS License #XXXXXX</div>
  <div class="flex gap-6"><a href="/privacy" class="footer-link">Privacy</a><a href="/accessibility" class="footer-link">Accessibility</a></div>
  </div>
  </div>
