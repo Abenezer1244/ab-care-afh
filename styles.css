@@ -78,6 +78,13 @@ body {
   color: var(--stone-600);
   background: white;
 }
+@media (max-width: 639px) {
+  .pill {
+    font-size: .58rem;
+    letter-spacing: .02em;
+    padding: .3rem .7rem;
+  }
+}
 .pill .dot { width: .35rem; height: .35rem; border-radius: 999px; background: var(--coral); }
 .pill-light {
   border: 1px solid rgba(255,255,255,.35);
