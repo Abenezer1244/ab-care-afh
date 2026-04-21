@@ -4,10 +4,18 @@
   const mmToggle = document.getElementById('mm-toggle');
   const mm = document.getElementById('mm');
   if (mmToggle && mm) {
+    const closeMenu = () => {
+      mm.classList.remove('open');
+      mm.classList.add('hidden');
+      mmToggle.setAttribute('aria-expanded', 'false');
+    };
     mmToggle.addEventListener('click', () => {
       const isOpen = mm.classList.toggle('open');
       mm.classList.toggle('hidden', !isOpen);
       mmToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    mm.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', closeMenu);
     });
   }
 

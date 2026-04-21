@@ -238,6 +238,7 @@ details[open] .faq-plus { transform: rotate(45deg); }
   overflow: hidden;
   border-radius: 14px;
   cursor: zoom-in;
+  aspect-ratio: 4 / 3;
   background: var(--cream);
   transition: transform .5s ease, box-shadow .5s ease;
 }

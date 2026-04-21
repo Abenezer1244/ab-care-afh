@@ -52,13 +52,13 @@
  </div>
  </div>
  <div id="mm" class="md:hidden hidden border-t border-stone-100 bg-white">
- <div class="px-6 py-6 flex flex-col gap-4 text-sm font-medium">
- <a href="/" class="text-stone-500">Home</a>
- <a href="/about" class="text-stone-500">About</a>
- <a href="/services" class="text-stone-500">Services</a>
- <a href="/gallery" class="text-stone-500">Gallery</a>
- <a href="/contact" class="text-ink">Contact</a>
- <a href="#contact-form" class="btn-coral mt-2 justify-center">Schedule a Tour</a>
+ <div class="px-6 py-4 flex flex-col text-sm font-medium divide-y divide-stone-100">
+ <a href="/" class="block py-3 text-stone-500">Home</a>
+ <a href="/about" class="block py-3 text-stone-500">About</a>
+ <a href="/services" class="block py-3 text-stone-500">Services</a>
+ <a href="/gallery" class="block py-3 text-stone-500">Gallery</a>
+ <a href="/contact" class="block py-3 text-ink">Contact</a>
+ <a href="#contact-form" class="btn-coral mt-4 justify-center">Schedule a Tour</a>
  </div>
  </div>
 </nav>
@@ -114,7 +114,7 @@
 
  <div class="field">
  <label for="email">Email <span class="lowercase tracking-normal font-normal text-stone-400">(optional)</span></label>
- <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+ <input type="email" id="email" name="email" inputmode="email" placeholder="you@example.com" autocomplete="email">
  </div>
 
  <div class="field">
@@ -169,7 +169,7 @@
  3021 112th Pl SE<br>
  Everett, WA 98208
  </address>
- <a href="#map" class="inline-block mt-3 text-xs text-coral underline underline-offset-4 hover:no-underline">Get directions →</a>
+ <a href="#map" class="inline-block mt-3 py-2 text-xs text-coral underline underline-offset-4 hover:no-underline">Get directions →</a>
  </div>
 
  <div class="info-row">
@@ -181,7 +181,7 @@
 
  <div class="info-row">
  <div class="info-label">Email</div>
- <a href="mailto:genetweledgeberiel2@gmail.com" class="block text-base mt-2 hover:text-coral transition break-all">genetweledgeberiel2@gmail.com</a>
+ <a href="mailto:genetweledgeberiel2@gmail.com" class="block text-base mt-2 hover:text-coral transition [overflow-wrap:anywhere]">genetweledgeberiel2@gmail.com</a>
  <p class="text-xs text-stone-500 mt-1">We'll respond within 24 hours.</p>
  </div>
 
@@ -242,7 +242,7 @@
  <div>
  <div class="text-xs uppercase tracking-widest text-white/50 font-semibold">Contact</div>
  <ul class="mt-6 space-y-3 text-sm font-light">
- <li><a href="mailto:genetweledgeberiel2@gmail.com" class="footer-link break-all">genetweledgeberiel2@gmail.com</a></li>
+ <li><a href="mailto:genetweledgeberiel2@gmail.com" class="footer-link [overflow-wrap:anywhere]">genetweledgeberiel2@gmail.com</a></li>
  <li><a href="tel:+12068345724" class="footer-link">+1 (206) 834-5724</a></li>
  </ul>
  </div>
