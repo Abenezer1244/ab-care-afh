@@ -97,7 +97,7 @@
  <h2 class="serif text-3xl md:text-4xl mt-6 tracking-tight font-normal leading-tight">
  Tell us about your <span class="italic">loved one.</span>
  </h2>
- <p class="text-stone-500 font-light mt-3 leading-relaxed">We'll reply personally within 24 hours, often sooner.</p>
+ <p class="text-stone-500 font-light mt-3 leading-relaxed">One of us reads every message personally — not a call center. We reply within 24 hours, often sooner, and never add you to a mailing list.</p>
 
  <form action="https://formsubmit.co/genetweledgeberiel2@gmail.com" method="POST" class="mt-10 grid sm:grid-cols-2 gap-5">
  <!-- FormSubmit meta -->
@@ -112,10 +112,17 @@
  <input type="text" id="name" name="name" required placeholder="Jane Smith">
  </div>
 
- <div class="field sm:col-span-2">
- <label for="contact">Phone or email</label>
- <input type="text" id="contact" name="contact" required placeholder="(206) 555-0100 or you@example.com">
+ <div class="field">
+ <label for="email">Email <span class="lowercase tracking-normal font-normal text-stone-400">(optional)</span></label>
+ <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
  </div>
+
+ <div class="field">
+ <label for="phone">Phone <span class="lowercase tracking-normal font-normal text-stone-400">(optional)</span></label>
+ <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="(206) 555-0100" autocomplete="tel">
+ </div>
+
+ <p class="sm:col-span-2 text-xs text-stone-500 -mt-2">Share whichever is easier — we'll use it to reply.</p>
 
  <div class="field sm:col-span-2">
  <label for="message">What should we know?</label>
@@ -123,10 +130,28 @@
  </div>
 
  <div class="sm:col-span-2 flex flex-wrap items-center gap-4 mt-2">
- <button type="submit" class="btn-coral">Send Inquiry →</button>
+ <button type="submit" class="btn-coral">Send message →</button>
  <p class="text-xs text-stone-500">Or call/text <a href="tel:+12068345724" class="underline">(206) 834-5724</a>. Personal reply within 24 hours.</p>
  </div>
  </form>
+ <script>
+ (function () {
+ const form = document.querySelector('form[action*="formsubmit"]');
+ const email = document.getElementById('email');
+ const phone = document.getElementById('phone');
+ if (!form || !email || !phone) return;
+ function validate() {
+ const msg = (!email.value.trim() && !phone.value.trim())
+ ? 'Please share a phone number or email so we can reply.' : '';
+ email.setCustomValidity(msg);
+ phone.setCustomValidity(msg);
+ }
+ email.addEventListener('input', validate);
+ phone.addEventListener('input', validate);
+ form.addEventListener('submit', validate);
+ validate();
+ })();
+ </script>
  </div>
 
  <!-- Info: editorial list, no icon circles -->
@@ -150,7 +175,8 @@
  <div class="info-row">
  <div class="info-label">Call</div>
  <a href="tel:+12068345724" class="block serif text-2xl mt-2 hover:text-coral transition">+1 (206) 834-5724</a>
- <p class="text-xs text-stone-500 mt-1">Mon to Fri, 9 am, 5 pm PST</p>
+ <p class="text-xs text-stone-500 mt-1">Office: Mon to Fri · 9 am to 5 pm PST</p>
+ <p class="text-xs text-stone-500 mt-1">For a care concern, text anytime — someone's always awake.</p>
  </div>
 
  <div class="info-row">
@@ -160,9 +186,9 @@
  </div>
 
  <div class="info-row">
- <div class="info-label">Fax</div>
- <div class="text-base mt-2">+1 (425) 948-6762</div>
- <p class="text-xs text-stone-500 mt-1">Secure document delivery.</p>
+ <div class="info-label">For healthcare providers</div>
+ <div class="text-base mt-2">Fax · +1 (425) 948-6762</div>
+ <p class="text-xs text-stone-500 mt-1">Secure document delivery for discharge planners, pharmacies, and physicians.</p>
  </div>
  </div>
  </div>
@@ -177,7 +203,7 @@
  <span class="pill">03 · Find us here</span>
  <h2 class="serif text-4xl md:text-5xl mt-6 tracking-tight font-normal">A <span class="italic">quiet</span> Everett street.</h2>
  <p class="text-stone-500 font-light mt-3 max-w-md mx-auto leading-relaxed">
- Tucked into south Everett's <span class="italic text-coral">Silverlake</span> neighborhood, minutes from <span class="italic text-coral">Silverlake</span> Park, a peaceful setting for our residents.
+ Tucked into south Everett's <span class="italic text-coral">Silverlake</span> neighborhood, minutes from the park, a peaceful setting for our residents.
  </p>
  </div>
  <div class="relative rounded-2xl overflow-hidden border border-stone-200 aspect-[16/10] md:aspect-[21/9] max-w-6xl mx-auto">
@@ -210,13 +236,14 @@
  <address class="not-italic mt-6 text-sm text-white/60 font-light leading-relaxed">3021 112th Pl SE<br>Everett, WA 98208<br>United States</address>
  <div class="text-xs uppercase tracking-widest text-white/50 font-semibold mt-6">Office Hours</div>
  <p class="mt-3 text-sm text-white/60 font-light leading-relaxed">Mon to Fri · 9:00 AM to 5:00 PM<br>Tours by appointment</p>
+ <div class="text-xs uppercase tracking-widest text-white/50 font-semibold mt-5">After hours</div>
+ <p class="mt-2 text-sm text-white/60 font-light leading-relaxed">For a care concern, <a href="tel:+12068345724" class="footer-link">call or text anytime</a> — someone's always awake.</p>
  </div>
  <div>
  <div class="text-xs uppercase tracking-widest text-white/50 font-semibold">Contact</div>
  <ul class="mt-6 space-y-3 text-sm font-light">
  <li><a href="mailto:genetweledgeberiel2@gmail.com" class="footer-link break-all">genetweledgeberiel2@gmail.com</a></li>
  <li><a href="tel:+12068345724" class="footer-link">+1 (206) 834-5724</a></li>
- <li class="text-white/50">Fax · +1 (425) 948-6762</li>
  </ul>
  </div>
  </div>
