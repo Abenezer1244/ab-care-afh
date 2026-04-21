@@ -50,7 +50,7 @@
  <button id="mm-toggle" class="md:hidden flex flex-col justify-center gap-1.5 p-3 min-h-[44px] min-w-[44px]" aria-label="Toggle navigation menu" aria-controls="mm" aria-expanded="false"><span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span></button>
  </div>
  </div>
- <div id="mm" class="md:hidden hidden border-t border-stone-100 bg-white">
+ <div id="mm" class="md:hidden hidden border-t border-stone-100 bg-white max-h-[calc(100dvh-80px)] overflow-y-auto pb-[max(env(safe-area-inset-bottom),16px)]">
  <div class="px-6 py-4 flex flex-col text-base font-medium divide-y divide-stone-100">
  <a href="/" class="block py-5 text-stone-500">Home</a>
  <a href="/about" class="block py-5 text-stone-500">About</a>
