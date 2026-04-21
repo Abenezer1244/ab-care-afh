@@ -318,7 +318,11 @@ button:focus-visible {
   max-height: 0;
   transition: max-height .35s ease;
 }
-#mm.open { max-height: 400px; }
+#mm.open {
+  max-height: calc(100vh - 80px);
+  max-height: calc(100dvh - 80px);
+  overflow-y: auto;
+}
 
 /* FAQ open animation */
 details[open] summary ~ * { animation: faqIn .35s ease; }
