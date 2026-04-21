@@ -99,13 +99,13 @@
  </h2>
  <p class="text-stone-500 font-light mt-3 leading-relaxed">One of us reads every message personally — not a call center. We reply within 24 hours, often sooner, and never add you to a mailing list.</p>
 
- <form action="https://formsubmit.co/genetweledgeberiel2@gmail.com" method="POST" class="mt-10 grid sm:grid-cols-2 gap-5">
- <!-- FormSubmit meta -->
- <input type="hidden" name="_subject" value="New inquiry from AB CARE AFH website">
- <input type="hidden" name="_template" value="table">
- <input type="hidden" name="_captcha" value="false">
- <input type="hidden" name="_next" value="https://abcareafhllc.com/thanks">
- <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+ <form action="https://api.web3forms.com/submit" method="POST" class="mt-10 grid sm:grid-cols-2 gap-5">
+ <!-- Web3Forms meta -->
+ <input type="hidden" name="access_key" value="5a1db662-23fe-4679-9d0e-eba5d9d406a7">
+ <input type="hidden" name="subject" value="New inquiry from AB CARE AFH website">
+ <input type="hidden" name="from_name" value="AB CARE AFH website">
+ <input type="hidden" name="redirect" value="https://abcareafhllc.com/thanks">
+ <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" style="display:none">
 
  <div class="field sm:col-span-2">
  <label for="name">Your name</label>
@@ -136,7 +136,7 @@
  </form>
  <script>
  (function () {
- const form = document.querySelector('form[action*="formsubmit"]');
+ const form = document.querySelector('form[action*="web3forms"]');
  const email = document.getElementById('email');
  const phone = document.getElementById('phone');
  if (!form || !email || !phone) return;
