@@ -50,6 +50,28 @@
     });
   }
 
+  // ---------- Auto-rotating image slideshows (Inside the Home tiles) ----------
+  // CSS sets initial state: .slide { opacity: 0 } and .slide:first-of-type { opacity: 1 }
+  if (!reduceMotion) {
+    document.querySelectorAll('[data-slideshow]').forEach((show, idx) => {
+      const slides = Array.from(show.querySelectorAll('.slide'));
+      if (slides.length < 2) return;
+      let i = 0;
+      const interval = parseInt(show.dataset.interval, 10) || 4500;
+      // Stagger each tile's first transition so they don't change in lockstep
+      const stagger = idx * 1300;
+      setTimeout(() => {
+        setInterval(() => {
+          if (document.hidden) return;
+          const next = (i + 1) % slides.length;
+          slides[next].style.opacity = '1';
+          slides[i].style.opacity = '0';
+          i = next;
+        }, interval);
+      }, stagger);
+    });
+  }
+
   // ---------- Gallery lightbox (gallery.html only) ----------
   const lightbox = document.getElementById('lightbox');
   if (lightbox) {

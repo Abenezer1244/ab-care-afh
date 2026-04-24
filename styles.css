@@ -17,6 +17,13 @@
 
 * { -webkit-font-smoothing: antialiased; }
 
+/* Editorial auto-rotating image slideshows (Inside the Home tiles) */
+[data-slideshow] .slide { opacity: 0; transition: opacity 1200ms ease-in-out; will-change: opacity; }
+[data-slideshow] .slide:first-of-type { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  [data-slideshow] .slide { transition: none; }
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: #fff;

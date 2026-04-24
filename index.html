@@ -293,12 +293,97 @@
  </div>
 </section>
 
+<!-- ========== INSIDE THE HOME (editorial collage + gallery CTA) ========== -->
+<section class="bg-cream py-20 md:py-32 relative overflow-hidden">
+ <!-- soft ambient blobs -->
+ <div class="pointer-events-none absolute -top-32 -right-24 w-[28rem] h-[28rem] rounded-full bg-coral/[0.06] blur-3xl"></div>
+ <div class="pointer-events-none absolute -bottom-32 -left-24 w-[28rem] h-[28rem] rounded-full bg-coral/[0.05] blur-3xl"></div>
+
+ <div class="max-w-[1400px] mx-auto px-6 md:px-12 relative">
+ <!-- Header -->
+ <div class="grid md:grid-cols-12 gap-8 md:gap-16 items-end mb-12 md:mb-16" data-reveal>
+ <div class="md:col-span-7">
+ <span class="pill">03 · Inside the Home</span>
+ <h2 class="serif text-4xl md:text-5xl lg:text-6xl mt-6 tracking-tight leading-[1.05] font-normal">
+ Where care <span class="italic">feels like</span> home.
+ </h2>
+ </div>
+ <div class="md:col-span-5">
+ <p class="text-stone-500 leading-relaxed font-light max-w-md">
+ Sun-lit common rooms, private bedrooms, a fenced backyard, and quiet corners made for shared meals and slow afternoons. Step inside before you visit.
+ </p>
+ </div>
+ </div>
+
+ <!-- Editorial collage: asymmetric magazine spread with auto-rotating crossfade slideshows -->
+ <div class="grid grid-cols-12 gap-3 md:gap-5 md:grid-rows-[repeat(2,minmax(0,1fr))] md:min-h-[640px]" data-reveal>
+ <!-- Featured tall (left): living spaces -->
+ <figure class="col-span-12 md:col-span-7 md:row-span-2 relative group overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 aspect-[4/5] md:aspect-auto" data-slideshow data-interval="5000">
+ <img src="images/gallery-08.webp" alt="Warm living room with fireplace" class="slide absolute inset-0 w-full h-full object-cover" loading="eager" decoding="async">
+ <img src="images/gallery-10.webp" alt="Living room with fresh flowers" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-16.webp" alt="Cozy living room" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-12.webp" alt="Warm interior space" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-05.webp" alt="Social space" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-15.webp" alt="Open living room with kitchen view" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-02.webp" alt="Living room with natural light" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <div class="absolute inset-0 bg-gradient-to-t from-warm-dark/70 via-warm-dark/10 to-transparent pointer-events-none"></div>
+ <figcaption class="absolute bottom-6 left-6 right-6 flex items-end justify-between gap-4 text-white">
+ <div>
+ <div class="mono text-[10px] uppercase tracking-[0.25em] text-coral/90">No. 01</div>
+ <div class="serif text-2xl md:text-3xl mt-1.5 italic font-normal">Living spaces</div>
+ </div>
+ <span class="mono text-[10px] uppercase tracking-[0.2em] text-white/70 hidden md:inline">where days unfold</span>
+ </figcaption>
+ </figure>
+
+ <!-- Top right: bedrooms -->
+ <figure class="col-span-6 md:col-span-5 relative group overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 aspect-square md:aspect-auto" data-slideshow data-interval="4200">
+ <img src="images/gallery-03.webp" alt="A comfortable private bedroom" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-11.webp" alt="Modern guest bedroom" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-18.webp" alt="Resident bedroom with bench" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-25.webp" alt="Comfortable suite" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-27.webp" alt="Bedroom with sitting area" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <figcaption class="absolute bottom-3 left-3 md:bottom-4 md:left-4 mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.25em] text-white bg-warm-dark/55 backdrop-blur-sm px-2.5 md:px-3 py-1 md:py-1.5 rounded-full">
+ No. 02 · Private Suites
+ </figcaption>
+ </figure>
+
+ <!-- Bottom right: dining + kitchen -->
+ <figure class="col-span-6 md:col-span-5 relative group overflow-hidden rounded-2xl border border-stone-200 bg-stone-100 aspect-square md:aspect-auto" data-slideshow data-interval="4700">
+ <img src="images/gallery-04.webp" alt="The shared dining area" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-13.webp" alt="Bright kitchen island" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-14.webp" alt="Kitchen and dining area" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-19.webp" alt="Dining experience" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <img src="images/gallery-23.webp" alt="Kitchen with stainless appliances" class="slide absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+ <figcaption class="absolute bottom-3 left-3 md:bottom-4 md:left-4 mono text-[9px] md:text-[10px] uppercase tracking-[0.2em] md:tracking-[0.25em] text-white bg-warm-dark/55 backdrop-blur-sm px-2.5 md:px-3 py-1 md:py-1.5 rounded-full">
+ No. 03 · Kitchen & Dining
+ </figcaption>
+ </figure>
+ </div>
+
+ <!-- CTA strip -->
+ <div class="mt-10 md:mt-14 pt-8 md:pt-10 border-t border-stone-300/70 flex flex-col md:flex-row md:items-center md:justify-between gap-6" data-reveal>
+ <div class="flex items-center gap-5">
+ <div class="serif text-5xl md:text-6xl text-coral leading-none font-normal">40<span class="text-3xl md:text-4xl align-top">+</span></div>
+ <div>
+ <div class="mono text-[11px] uppercase tracking-[0.25em] text-stone-500">photos inside</div>
+ <p class="serif text-xl md:text-2xl mt-1 font-normal">See every corner of the home.</p>
+ </div>
+ </div>
+ <a href="gallery.html" class="group inline-flex items-center gap-3 self-start md:self-auto bg-warm-dark text-white pl-6 pr-3 py-3 rounded-full text-sm font-medium hover:bg-coral transition-colors duration-300">
+ <span>View the full gallery</span>
+ <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-coral text-white transition-transform duration-300 group-hover:translate-x-0.5 group-hover:bg-white group-hover:text-coral">→</span>
+ </a>
+ </div>
+ </div>
+</section>
+
 <!-- ========== TESTIMONIAL (warm-dark, hospitality premium) ========== -->
 <section class="bg-warm-dark text-white/90 py-24 md:py-36 relative overflow-hidden">
  <div class="absolute inset-0 opacity-[0.07]" style="background-image: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.92' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>&quot;);"></div>
  <div class="max-w-[1100px] mx-auto px-6 md:px-12 relative" data-reveal>
  <div class="flex items-baseline gap-4">
- <span class="mono text-xs uppercase tracking-[0.2em] text-coral">03, Family Perspectives</span>
+ <span class="mono text-xs uppercase tracking-[0.2em] text-coral">04, Family Perspectives</span>
  <div class="flex-1 h-px bg-white/15"></div>
  </div>
 
